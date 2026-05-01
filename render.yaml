@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: discord-email-bot
+    runtime: node
+    startCommand: node index.js
+    envVars:
+      - key: DISCORD_BOT_TOKEN
+        sync: false
+      - key: DISCORD_OWNER_ID
+        sync: false
